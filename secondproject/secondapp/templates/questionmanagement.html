@@ -1,0 +1,25 @@
+<form>
+    <input type="text" name="qno" placeholder="Enter qno" value="{{question.qno}}"></input><br><br>
+
+    <input type="text" name="qtext" placeholder="Enter question" value="{{question.qtext}}"></input><br><br>
+
+    <input type="text" name="answer" placeholder="Enter Answer" value="{{question.answer}}"></input><br><br>
+
+    <input type="text" name="op1" placeholder="Enter op1" value="{{question.op1}}"></input><br><br>
+
+    <input type="text" name="op2" placeholder="Enter op2" value="{{question.op2}}"></input><br><br>
+
+    <input type="text" name="op3" placeholder="Enter op3" value="{{question.op3}}"></input><br><br>
+
+    <input type="text" name="op4" placeholder="Enter op4" value="{{question.op4}}"></input><br><br>
+    
+    <input type="text" name="subject" placeholder="Enter subject" value="{{question.subject}}"></input><br><br>
+   
+    <input type="submit" value="addQuestion" formaction="/addQuestion">
+    <input type="submit" value="viewQuestion" formaction="/viewQuestion">
+    <input type="submit" value="deleteQuestion" formaction="/deleteQuestion">
+    <input type="submit" value="updateQuestion" formaction="/updateQuestion">
+
+
+</form>
+<span style="color:red">{{message}}</span>

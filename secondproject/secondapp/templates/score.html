@@ -1,0 +1,36 @@
+<head>
+    <style>
+    
+        table,td,th
+        {
+            border:1px solid grey
+        }
+        table
+        {
+            border-collapse: collapse
+        }
+    </style>
+    
+    </head>
+    
+    <body>
+        Your score is {{score}}
+    <tr><tr>
+        <table>  
+        <tr>  
+            <th>QNo</th>
+            <th>Question</th>
+            <th>Correct Answer</th>
+            <th>Your Answer</th>
+        </tr>  
+        
+    {% for list in responses %}  
+        <tr>  
+            <td> {{list.0}} </td>  
+            <td> {{list.1}} </td>  
+            <td> {{list.2}} </td>  
+            <td> {{list.3}} </td>  
+        </tr>  
+    {% endfor %}  
+    </table> 
+    </body>
